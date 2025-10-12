@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daily Expenses - Budget Buddy</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Header / Navbar -->
+    <header>
+        <h1>Budget Buddy</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="expenses.html">Daily Expenses</a>
+            <a href="login.html">Login</a>
+            <a href="signup.html">Sign Up</a>
+        </nav>
+    </header>
+
+    <!-- Daily Expense Section -->
+    <section class="daily-expense" style="width:90%; max-width:600px; margin:40px auto;">
+        <h2>Track Your Daily Expenses</h2>
+
+        <label for="expense-name">Expense Name:</label>
+        <input type="text" id="expense-name" placeholder="e.g., Food">
+
+        <label for="expense-amount">Amount:</label>
+        <input type="number" id="expense-amount" placeholder="e.g., 100">
+
+        <button id="add-expense-btn">Add Expense</button>
+
+        <table border="1" id="expense-table" style="margin-top:20px; width:100%; text-align:left; border-collapse:collapse;">
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>Expense Name</th>
+                    <th>Amount (₹)</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Expenses will appear here -->
+            </tbody>
+            <tfoot>
+                <tr>
+                    <th colspan="2">Total</th>
+                    <th id="total">0</th>
+                </tr>
+            </tfoot>
+        </table>
+    </section>
+
+    <!-- Link to separate JS file -->
+    <script src="expense.js"></script>
+
+</body>
+</html>
