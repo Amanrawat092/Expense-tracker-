@@ -1,146 +1,152 @@
+/* Reset & Base */
+* { margin:0; padding:0; box-sizing:border-box; font-family:'Poppins',sans-serif; }
+body { background:#f1f5f9; color:#1e293b; line-height:1.6; }
+
+/* Navbar */
+header {
+  width:100%; 
+  padding:18px 40px; 
+  display:flex; 
+  justify-content:space-between; 
+  align-items:center;
+  background:white;
+   box-shadow:0 2px 8px rgba(0,0,0,0.05); 
+   position:sticky; top:0; z-index:10;
+}
+header h1 { color:#16a34a; font-size:1.4rem; font-weight:600; }
+nav a { margin-left:18px; text-decoration:none; color:#1e293b; font-weight:500; transition:color .25s; }
+nav a:hover { color:#16a34a; }
+
+/* Hero */
+.hero { display:flex; flex-wrap:wrap; align-items:center; justify-content:center; padding:40px; gap:30px; }
+.hero-text { flex:1; min-width:260px; }
+.hero-text h2 { font-size:2rem; margin-bottom:12px; color:#1e293b; }
+.hero-text p { margin-bottom:16px; color:#475569; }
+.btn { display:inline-block; padding:10px 18px; background:#16a34a; color:white; font-weight:600; border-radius:8px; text-decoration:none; }
+
+/* features */
+.feature{
+  height: 600px;
+  width: 100%;
+  background-image: linear-gradient(to bottom right, #16a34a, rgb(18, 98, 12));
+  margin-left: auto;
+  margin-right: auto;
  
-    /* Reset & Base */
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      font-family: 'Poppins', sans-serif;
-    }
+  padding: 30px 40px;
 
-    body {
-      background: #f1f5f9;
-      color: #1e293b;
-      line-height: 1.6;
-    }
-
-    /* Navbar */
-    header {
-      width: 100%;
-      padding: 20px 60px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      background: white;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
-      position: sticky;
-      top: 0;
-    }
-
-    header h1 {
-      color: #16a34a;
-      font-size: 1.5rem;
-      font-weight: 600;
-    }
-
-    nav a {
-      margin-left: 20px;
-      text-decoration: none;
-      color: #1e293b;
-      font-weight: 500;
-      transition: color 0.3s;
-    }
-
-    nav a:hover {
-      color: #16a34a;
-    }
-
-    /* Hero Section */
-    .hero {
-      display: flex;
-      flex-wrap: wrap;
-      align-items: center;
-      justify-content: center;
-      padding: 60px;
-      gap: 40px;
-    }
-
-    .hero-text {
-      flex: 1;
-      min-width: 280px;
-    }
-
-    .hero-text h2 {
-      font-size: 2.5rem;
-      margin-bottom: 20px;
-      color: #1e293b;
-    }
-
-    .hero-text p {
-      margin-bottom: 20px;
-      font-size: 1.1rem;
-      color: #475569;
-    }
-
-    .btn {
-      display: inline-block;
-      padding: 12px 24px;
-      background: #16a34a;
-      color: white;
-      font-weight: 600;
-      border-radius: 8px;
-      text-decoration: none;
-      transition: background 0.3s;
-    }
-
-    .btn:hover {
-      background: #15803d;
-    }
-
-    .hero-image {
-      flex: 1;
-      min-width: 280px;
-      text-align: center;
-    }
-
-    .hero-image img {
-      max-width: 100%;
-      height: auto;
-    }
-
-    /* Footer */
-    footer {
-      text-align: center;
-      padding: 20px;
-      background: #fff;
-      color: #64748b;
-      font-size: 0.9rem;
-      margin-top: 40px;
-      border-top: 1px solid #e2e8f0;
-    }
-  /*for expence*/
-  #add-expense-btn{
-    
-     /*display: block;
-      padding: 12px 24px;
-      background: #16a34a;
-      color: white;
-      font-weight: 600;
-      border-radius: 8px;
-      text-decoration: none;
-      transition: background 0.3s;
-      margin: 20px auto;*/
-      
-    display: block;
-    margin: 20px auto;       /* center horizontally */
-    padding: 12px 25px;      /* size */
-    font-size: 16px;
-    font-weight: 600;
-    color: white;
-    background: linear-gradient(135deg, #4CAF50, #2E7D32); /* green gradient */
-    border: none;
-    border-radius: 25px;     /* pill shape */
-    cursor: pointer;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
-    transition: all 0.3s ease;
+  color: white;
+  font-size:20px;
 }
-#add-expense-btn:hover {
-    background: linear-gradient(135deg, #66BB6A, #388E3C); /* slightly lighter gradient */
-    
-    box-shadow: 0 6px 12px rgba(0,0,0,0.3);
+.f{
+  padding: 10px;
 }
-/* this is for section tag */
-.daily-expense{
-    background-color:#d0e3d0 ;
-    padding: 20px;
-    border-radius: 30px;
+.container{
+  margin: 10px;
+  display: flex;
+  padding: 20px;
+  justify-content: space-evenly;
+}
+.container2{
+  display: flex;
+  padding: 20px;
+  justify-content: space-evenly;
+}
+.feature-box{
+  background-color: white;
+  height:100px;
+  width: 150px;
+  
+}
+.feature-card{
+  width: 430px;
+  padding-left: auto;
+  padding-right: auto;
+}
+/* Footer */
+footer {
+            background-color: #262626;
+            color: var(--white);
+            padding: 40px 0;
+            text-align: center;
+            color:white;
+            height: 200px;
+        }
+
+        footer .containe {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            color: white;
+        }
+       .footer-nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            gap: 25px;
+            flex-wrap: wrap;
+        }
+
+        .footer-nav ul li a {
+            text-decoration: none;
+            color: var(--white);
+            transition: color 0.3s ease;
+        }
+
+        .footer-nav ul li a:hover {
+            color: var(--primary-color);
+        }
+    /* .social-links a {
+            color: var(--white);
+            font-size: 1.5em;
+            margin: 0 10px;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .social-links a:hover {
+            color: var(--primary-color);
+        } */
+/* Expense section base */
+.daily-expense {
+  background-color:#d0e3d0; padding:20px; border-radius:18px; box-shadow:0 6px 18px rgba(34, 33, 33, 0.04);
+}
+
+/* Inputs and selects in expense */
+.daily-expense input,
+.daily-expense select,
+.daily-expense button {
+  display:block; width:100%; max-width:420px; margin:10px auto; padding:10px; font-size:15px;
+  border:1px solid #cbd5e1; border-radius:8px; outline:none;
+}
+.daily-expense input:focus, .daily-expense select:focus { border-color:#16a34a; box-shadow:0 0 6px rgba(22,163,74,0.18); }
+
+/* Buttons */
+.primary-btn {
+  display:inline-block; padding:12px 22px; background:linear-gradient(135deg,#4CAF50,#2E7D32); color:white; border:none; border-radius:22px; font-weight:600; cursor:pointer;
+}
+.primary-btn:hover { transform:translateY(-2px); }
+.danger-btn {
+  display:inline-block; padding:12px 22px; background:#ef4444; color:white; border:none; border-radius:22px; font-weight:600; cursor:pointer;
+}
+.danger-btn:hover { transform:translateY(-2px); }
+
+/* Table styling */
+#expense-table { background:white; border-radius:12px; overflow:hidden; box-shadow:0 6px 18px rgba(2,6,23,0.06); }
+#expense-table th, #expense-table td { padding:12px 14px; border-bottom:1px solid #eef2f7; }
+#expense-table th { background:#16a34a; color:white; text-align:left; }
+
+/* Delete button */
+.delete-btn { background-color:#ef4444; color:white; border:none; padding:6px 10px; border-radius:6px; cursor:pointer; }
+.delete-btn:hover { background:#dc2626; }
+
+/* Large expense highlight */
+.large-expense { background: #ffe5e5 !important; }
+
+/* Responsive */
+@media (max-width:640px) {
+  .hero { padding:20px; }
+  header { padding:12px 16px; }
+  .daily-expense { margin: 20px 12px; }
 }
